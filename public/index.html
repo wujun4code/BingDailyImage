@@ -1,1 +1,48 @@
-Congrats, you just set up your cloud code project.
+<!doctype html>
+<html>
+<head>
+<title>Markdown Preview</title>
+<link rel="stylesheet" type="text/css" href="/css/clearness.css">
+
+</head>
+<body><h1>BingDailyImage</h1>
+
+<h1>API</h1>
+
+<ul>
+<li>http://www.bing.com/HPImageArchive.aspx?format=js&amp;idx=0&amp;n=1&amp;mkt=en-US</li>
+<li>supported standard:"480×800"(MWVGA), "800×480"(WVGA), "768×1024"(MXGA), "1024×768"(XGA), "720×1280"(MWXGA), "1280×720"(WXGA), "768×1366"(MWXGAPlus), "1366×768"(WXGAPlus), "1200×1920"(MWUXGA), "1920×1200"(WUXGA)</li>
+</ul>
+
+
+<h1>Reuqet</h1>
+
+<h2>BaseUrl</h2>
+
+<p><a href="https://hellobing.avosapps.com">https://hellobing.avosapps.com</a></p>
+
+<h2>Parameters</h2>
+
+<p>/dateString/resolutionCode</p>
+
+<h2>Sample</h2>
+
+<p>get <a href="http://cn.bing.com/">Bing</a> homepage background images at 2014-09-11 with a image resolution in 800x480,you can call</p>
+
+<pre><code>https://hellobing.avosapps.com/20140911/WVGA
+</code></pre>
+
+<p>and if you want to get a different height and width in the same resolution, you should set the resolutionCode with an "m" before the resolution code, for example, if you want to get a 480x800 image, you can request the API like this</p>
+
+<pre><code>https://hellobing.avosapps.com/20140911/MWVGA
+</code></pre>
+
+<h2>Response</h2>
+
+<pre><code>{
+   "url":"http://s.cn.bing.net/az/hprichbg/rb/Fanjingshan_ZH-CN11691452911_800x480.jpg",
+   "date":"20140911",
+   "resolution":"_800x480.jpg"
+}
+</code></pre></body>
+</html>

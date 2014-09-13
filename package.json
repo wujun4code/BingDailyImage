@@ -1,0 +1,9 @@
+{
+    "name": "HelloBing",
+    "description": "get daily background image from Bing@microsoft.com.",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "markdown": "0.5.0"
+    }
+}
