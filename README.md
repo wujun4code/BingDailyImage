@@ -5,12 +5,14 @@ BingDailyImage
 * http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US
 * supported standard:"480×800"(MWVGA), "800×480"(WVGA), "768×1024"(MXGA), "1024×768"(XGA), "720×1280"(MWXGA), "1280×720"(WXGA), "768×1366"(MWXGAPlus), "1366×768"(WXGAPlus), "1200×1920"(MWUXGA), "1920×1200"(WUXGA)
 
-# Reuqet
+# Request
 ## BaseUrl
 [https://hellobing.avosapps.com](https://hellobing.avosapps.com)
 
 ## Parameters
 /dateString/resolutionCode
+
+** Because Bing provides API for recent 15 days, so BingDailyImage provider API from 2014-08-28. **
 
 ## Sample
 get [Bing](http://cn.bing.com/) homepage background images at 2014-09-11 with a image resolution in 800x480,you can call 

@@ -13,14 +13,20 @@ app.use(express.static('public'));
 //app.use(express.static(__dirname + '/public'));
 //app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res) {
-  //res.redirect('/help');
-  res.sendfile('public/index.html');
+  res.render('readme');
 });
+
+app.get('/test', function(req, res) {
+  //res.redirect('/help');
+  res.render('test');
+});
+
 // // 使用 Express 路由 API 服务 /hello 的 HTTP GET 请求
 app.get('/help', function(req, res) {
   var rmPath = __dirname + '/../README.md';
   var data = fs.readFileSync(rmPath,'utf-8');
   var pageContent=markdown.toHTML(data);
+  //res.render('md', { md: pageContent });
   res.send(pageContent);
 });
 
